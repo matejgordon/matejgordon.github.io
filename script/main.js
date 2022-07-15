@@ -94,6 +94,7 @@ function guma() {
 
 function changeColor(){
     ctx.strokeStyle = document.getElementById("colorChoice").value; 
+    gumaobject = false;
 }
 
 

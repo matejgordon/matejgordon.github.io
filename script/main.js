@@ -74,22 +74,6 @@ function minusminus(){
 
 }
 
-
-function triplus(){
-    ctx.lineWidth = ctx.lineWidth + 50
-    document.getElementById("brush").innerHTML = "Brush size: "+ctx.lineWidth;
-}
-
-function triminus(){
-    ctx.lineWidth = ctx.lineWidth - 50
-    if (ctx.lineWidth = ctx.lineWidth - 1 < 1){
-        ctx.lineWidth = 1
-    }
-    document.getElementById("brush").innerHTML = "Brush size: "+ctx.lineWidth;
-
-}
-
-
 function exportovat(){
     var img = c.toDataURL('image/png')
 

@@ -2,7 +2,13 @@ body {
     padding-bottom: 30px;
 }
 
+button{
+    background-color:lightgray;
+}
 
+.stetec{
+    background-color:gray;
+}
 #color{
     height: 100px;
     width: 100px;
@@ -21,7 +27,7 @@ body {
 
 }
 
-input[type='color'] {
+input {
     vertical-align: middle;
   }
 

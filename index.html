@@ -12,14 +12,12 @@
 <body onload="Draw()">
     <canvas onmousemove="penDown(event)" onmousedown="showCoords(event)" id="whiteboard" style="border:2px dotted #000000;"></canvas><br>
     <div id="controls">
-    <p id="brush"></p>
     <input type="color" class="color" id="colorChoice" onchange="changeColor()">
-    <button onclick="guma()" id="color">Guma</button>
+    <button onclick="paint()" id="color" class="stetec"><img src="img/paintbrush.png" height="50%" alt=""></button>
+    <button onclick="guma()" id="color" class="gumaimg"><img src="img/eraser.png" height="60%" alt=""></button>
     <button onclick="clean()" id="color">Smazat</button>
-    <button onclick="plus()" id="color">+</button>
-    <button onclick="minus()" id="color">-</button>
-    <button onclick="plusplus()" id="color">++</button>
-    <button onclick="minusminus()" id="color">--</button>
+    <input type="range" min="1" max="500" value="10" class="slider" id="size" onchange="changeSize()">
+    <p id="brush"></p>
     <button onclick="exportovat()" id="color" class="export">Export</button>
 
     </div>

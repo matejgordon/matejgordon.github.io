@@ -1,0 +1,29 @@
+body {
+    padding-bottom: 30px;
+}
+
+
+#color{
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    margin: 8px;
+}
+
+#brush{
+    font-style: bold;
+    font-size: 30px;
+}
+
+p{
+    display: inline;
+}
+#controls{
+    display: inline;
+}
+
+#controls > .export{
+    display: inline;
+    position: absolute;
+    right: 0;
+}

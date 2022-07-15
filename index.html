@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free whiteboard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/main.js"></script>
+</head>
+<body onload="Draw()">
+    <canvas onmousemove="penDown(event)" onmousedown="showCoords(event)" id="whiteboard" style="border:2px dotted #000000;"></canvas><br>
+    <div id="controls">
+    <p id="brush"></p>
+    <button onclick="black()" id="color">Černá</button>   
+    <button onclick="blue()" id="color">Modrá</button>
+    <button onclick="red()" id="color">Červená</button>
+    <button onclick="clean()" id="color">Smazat</button>
+    <button onclick="plus()" id="color">+</button>
+    <button onclick="minus()" id="color">-</button>
+    <button onclick="plusplus()" id="color">++</button>
+    <button onclick="minusminus()" id="color">--</button>
+    <button onclick="exportovat()" id="color" class="export">Export</button>
+
+    </div>
+
+    
+  
+</body>
+</html>

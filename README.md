@@ -1,1 +1,1 @@
-# Small preview of free whiteboard webapp made with JavaScript
+# Small preview of a free whiteboard webapp made with JavaScript

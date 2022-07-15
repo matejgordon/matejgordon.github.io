@@ -15,7 +15,7 @@ function Draw() {
     c.height = document.body.clientHeight;
 
     ctx.lineWidth = 5;
-    ctx.strokeStyle = '#000000';
+    ctx.strokeStyle = document.getElementById("colorChoice").value;
     document.getElementById("brush").innerHTML = "Brush size: " + ctx.lineWidth;
 
 }
@@ -92,21 +92,10 @@ function guma() {
 }
 
 
-c.addEventListener("touchstart", function(e) {
-    mousePos = getTouchPos(c, e);
-    var touch = e.touches[0];
-    var mouseEvent = new MouseEvent("mousedown", {
-        clientX: touch.clientX,
-        clientY: touch.clientY
-    });
-    c.dispatchEvent(mouseEvent);
-}, false);
+function changeColor(){
+    ctx.strokeStyle = document.getElementById("colorChoice").value; 
+}
 
-document.body.addEventListener("touchstart", function(e) {
-    if (e.target == c) {
-        e.preventDefault();
-    }
-}, false);
 
 function penDown(event) {
 

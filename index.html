@@ -13,9 +13,7 @@
     <canvas onmousemove="penDown(event)" onmousedown="showCoords(event)" id="whiteboard" style="border:2px dotted #000000;"></canvas><br>
     <div id="controls">
     <p id="brush"></p>
-    <button onclick="black()" id="color">Černá</button>   
-    <button onclick="blue()" id="color">Modrá</button>
-    <button onclick="red()" id="color">Červená</button>
+    <input type="color" class="color" id="colorChoice" onchange="changeColor()">
     <button onclick="guma()" id="color">Guma</button>
     <button onclick="clean()" id="color">Smazat</button>
     <button onclick="plus()" id="color">+</button>

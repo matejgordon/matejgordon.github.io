@@ -9,7 +9,7 @@
     <script src="script/main.js"></script>
 </head>
 <body onload="Draw()">
-    <canvas onmousemove="penDown(event)" onmousedown="showCoords(event)" id="whiteboard" style="border:2px dotted #000000;"></canvas><br>
+    <canvas ontouchmove="penDown(event)" onmousemove="penDown(event)" ontouchstart="showCoords(event)" onmousedown="showCoords(event)" id="whiteboard" style="border:2px dotted #000000;"></canvas><br>
     <div id="controls">
     <p id="brush"></p>
     <button onclick="black()" id="color">Černá</button>   
